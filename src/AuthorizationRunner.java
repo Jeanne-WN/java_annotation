@@ -12,7 +12,7 @@ public class AuthorizationRunner {
                 Authorization annotation = method.getAnnotation(Authorization.class);
                 if(annotation != null){
                     method.invoke(obj);
-                    System.out.println(annotation.message());
+                    System.out.println(">>>>>> "+annotation.message() + "\n");
                 }
             }
         }
